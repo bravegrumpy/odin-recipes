@@ -98,6 +98,9 @@ html body main ul li a:hover {
   filter: hue-rotate(180deg);
   scale: 110%;
 }
+html body footer {
+  display: none;
+}
 @media (min-width: 250px) {
   html body header h1 {
     font-size: 1.87388721rem;
@@ -123,7 +126,7 @@ html body main ul li a:hover {
     background-color: #221E21;
     color: #deefe2;
   }
-  html body main ol li:before {
+  html body main ol li::before {
     content: "Step " counter(elementcounter) ". ";
     counter-increment: elementcounter;
     font-weight: bold;
@@ -155,12 +158,18 @@ html body main ul li a:hover {
     margin-left: 0px;
     text-align: center;
   }
-  html body main ol li {
+  html body main ul ol li {
     padding: 10px 50px;
+  }
+  html body footer {
+    display: unset;
+    background-color: rgba(162, 143, 157, 0.3);
+    width: 100%;
   }
 }
 @media (min-width: 400px) {
   html body header {
+    background-color: rgba(99, 163, 117, 0.5);
     gap: 5px;
     padding: 10px 0px;
   }
@@ -203,5 +212,30 @@ html body main ul li a:hover {
     background-color: #49393B;
     padding: 5px 5px;
     margin: 0px 10px;
+  }
+  html body footer {
+    width: unset;
+    background-color: unset;
+  }
+}
+@media (min-width: 450px) {
+  html body header img.food {
+    width: 200px;
+  }
+  html body main p {
+    background-color: rgba(173, 217, 244, 0.2);
+    padding: 15px 70px;
+    color: #000000;
+  }
+  html body main p a {
+    color: #269ae2;
+  }
+  html body main ol li {
+    background-color: rgba(222, 239, 226, 0.4);
+    color: #000000;
+  }
+  html body main ol li::before {
+    background-color: unset;
+    color: unset;
   }
 }

@@ -72,7 +72,6 @@ html {
         justify-content: center;
         align-items: center;
         background-color: @colors[@dark];
-
         header {
             display: flex; 
             flex-direction: column;
@@ -137,6 +136,9 @@ html {
                 }
             }
         }
+        footer {
+            display: none;
+        }
     }
 }
 
@@ -169,7 +171,7 @@ html {
                     counter-reset: elementcounter;
                     padding-left: 0;
                     li {
-                        &:before {
+                        &::before {
                             content: "Step " counter(elementcounter) ". ";
                             counter-increment: elementcounter;
                             font-weight: bold;
@@ -215,22 +217,30 @@ html {
                             text-align: center;
                         }
                     }
-                }
-                ol {
-                    li {
-                        padding: 10px 50px;
+                    ol {
+                        li {
+                            padding: 10px 50px;
+                        }
                     }
                 }
+            }
+            footer {
+                #lib.pallette;
+                display: unset;
+                background-color: fadeout(@colors[@secondary], 70%);
+                width: 100%;
             }
         }
     }
 }
+
 @media (min-width: 400px) {
     html {
         #lib.fontSizes;
         #lib.pallette;
         body {
             header {
+                background-color: fadeout(@colors[@primary], 50%);
                 gap: 5px;
                 padding: 10px 0px;
                 h1 {
@@ -274,9 +284,50 @@ html {
                     }
                 }
             }
+            footer {
+                width: unset;
+                background-color: unset;
+            }
         }
     }
 }
-@media (min-width: 450px) {}
-@media (min-width: 500px) {}
+@media (min-width: 450px) {
+    html {
+        #lib.pallette;
+        #lib.fontSizes;
+        body {
+            header {
+                img.food {
+                    width: 200px;
+                }
+            }
+            main {
+                p {
+                    background-color: fadeout(@colors[@emphasis], 80%);
+                    padding: 15px 70px;
+                    color: darken(@colors[@black], 50%);
+                    a {
+                        color: darken(@colors[@emphasis], 30%);
+                    }
+                }
+                ol {
+                    li {
+                        background-color: fadeout(@colors[@white], 60%);
+                        color: darken(@colors[@black], 50%);
+                        &::before {
+                            background-color: unset;
+                            color: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 500px) {
+    html {
+        #lib.pallette;
+        #lib.fontSizes;
+    }
+}
 @media (min-width: 800px) {}
