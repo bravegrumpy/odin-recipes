@@ -6,14 +6,16 @@ I am *whizzing* through the course material, becasue I don't really want to spen
 
 ## Goals for *This* Project
 
-- [ ] Make an HTML Page
-- [ ] Store it on github
-- [ ] Create a logical commit history
-- [ ] Create a basic HTML web page
-- [ ] Include the following
-    - [ ] links to another page
-    - [ ] images
-    - [ ] unordered lists
+- [x] Make an HTML Page
+- [x] Store it on github
+- [x] Publish on GithubPages
+- [x] Create a logical commit history
+- [x] Create a basic HTML web page
+- [x] Include the following
+    - [x] links to another page
+    - [x] images
+    - [x] unordered lists
+    - [x] ordered lists
 - [ ] Have fun with the project
     - [ ] Do as many as possible of the following.
         - [ ] Use a color scheme, make it using [coolors.co](https://coolors.co)
@@ -25,6 +27,9 @@ I am *whizzing* through the course material, becasue I don't really want to spen
             - [ ] Since I'm not using a framework, take advantage of media queries for elements that should not be visible at certain widths
 
 In general, I am aiming to treat this project a bit as the "What do you currently know" litmus test. I will be adhering to some rules as I make this project.  The goal is to stay within the spirit of "learning webdev" while still allowing myself to have the creative freedom to have fun with it. Because this is also aiming to be part of a "porfolio" of sorts, I want it to be somethign I'm proud to put my name on.
+
+**Rules**
+
     - Do not do a whole new "tutorial"
     - Don't use a web framework
     - You can look up API / syntax considerations
