@@ -8,7 +8,7 @@ I am *whizzing* through the course material, becasue I don't really want to spen
 
 - [x] Make an HTML Page
 - [x] Store it on github
-- [x] Publish on GithubPages
+- [x] Publish on Github Pages
 - [x] Create a logical commit history
 - [x] Create a basic HTML web page
 - [x] Include the following

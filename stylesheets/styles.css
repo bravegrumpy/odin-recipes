@@ -1,0 +1,138 @@
+a {
+  color: #ADD9F4;
+}
+a:hover {
+  color: #A28F9D;
+}
+a:visited {
+  filter: hue-rotate(180deg);
+}
+html {
+  background-color: #4C5B5C;
+  color: #deefe2;
+}
+html body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #49393B;
+}
+html body header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  background-color: #63A375;
+}
+html body header a.nav {
+  background-color: #49393B;
+  font-size: 1.3225rem;
+  width: 80%;
+  padding: 5px 0px;
+  margin: 5px auto;
+  color: #ADD9F4;
+  text-align: center;
+  text-decoration-style: wavy;
+  text-decoration-line: underline;
+  text-decoration-color: #A28F9D;
+  text-decoration-thickness: 2px;
+  font-size: 1.15rem;
+}
+html body header a.nav:hover {
+  filter: hue-rotate(180deg);
+  scale: 110%;
+}
+html body header h1 {
+  color: #221E21;
+  font-size: 1.520875rem;
+  text-align: center;
+}
+html body header img.food {
+  width: 100%;
+}
+html body main {
+  background-color: #221E21;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 0px;
+}
+html body main ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  width: 70vw;
+  gap: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+html body main ul li {
+  width: 80vw;
+  list-style: none;
+  background-color: #49393B;
+  margin-left: -20vw;
+  padding: 5px;
+}
+html body main ul li a {
+  margin-left: 25vw;
+  color: #ADD9F4;
+  text-align: center;
+  text-decoration-style: wavy;
+  text-decoration-line: underline;
+  text-decoration-color: #A28F9D;
+  text-decoration-thickness: 2px;
+  font-size: 1.15rem;
+}
+html body main ul li a:hover {
+  filter: hue-rotate(180deg);
+  scale: 110%;
+}
+@media (min-width: 250px) {
+  html body header h1 {
+    font-size: 2.01135719rem;
+    text-align: center;
+  }
+  html body main p {
+    padding: 5px 15px;
+  }
+  html body main ul li {
+    margin-left: -15vw;
+  }
+  html body main ol {
+    list-style-type: none;
+    counter-reset: elementcounter;
+    padding-left: 0;
+  }
+  html body main ol li {
+    padding: 5px 15px;
+    background-color: #221E21;
+    color: #deefe2;
+  }
+  html body main ol li:before {
+    content: "Step " counter(elementcounter) ". ";
+    counter-increment: elementcounter;
+    font-weight: bold;
+    background-color: #A28F9D;
+    color: #221E21;
+  }
+}
+@media (min-width: 350px) {
+  body main ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: mason;
+    flex-direction: unset;
+    background-color: pink;
+  }
+  body main ul li {
+    background-color: blue;
+  }
+}
