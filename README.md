@@ -21,7 +21,7 @@ I am *whizzing* through the course material, becasue I don't really want to spen
         - [x] Use a color scheme, make it using [coolors.co](https://coolors.co)
             - I intentionally used a "bad" color scheme, to try and replicate conditions that might be seen if a client were to see this.
         - [x] Use responsive design principles
-        - [ ] Make the index have a card based layout, and take advantage of the new mosaic grid layout
+        - [x] Make the index has a card based layout, and take advantage of the new mosaic grid layout
         - [ ] Experiment with scroll-snap, and customizing scrollbars
         - [ ] Use a custom cursor image
         - [ ] Focus on micro-interactions on hover.
@@ -39,6 +39,7 @@ In general, I am aiming to treat this project a bit as the "What do you currentl
 - publish using gitub pages
 - anything you can link to using a cdn and an link in the `<head>` is kosher.
 - Do Google info, so long as its just for API esque concepts
+- ChatGPT is allowed for quick "WTF is wrong", but once the concept is understood, it is not to be used again.
 
 [^1]: Windows Subsystem for Linux, the "Linux" for Windows users. I do have ZorinOS installed, but I did not actually partition enough space for the OS for it to be useful, and I'm not super sure how to "un partition" a hardrive once it is partitioned.
 [^2]: The version control system that "won". 
