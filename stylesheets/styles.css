@@ -29,7 +29,7 @@ html body header {
 }
 html body header a.nav {
   background-color: #49393B;
-  font-size: 1.3225rem;
+  font-size: 1.3689rem;
   width: 80%;
   padding: 5px 0px;
   margin: 5px auto;
@@ -39,7 +39,7 @@ html body header a.nav {
   text-decoration-line: underline;
   text-decoration-color: #A28F9D;
   text-decoration-thickness: 2px;
-  font-size: 1.15rem;
+  font-size: 1.17rem;
 }
 html body header a.nav:hover {
   filter: hue-rotate(180deg);
@@ -47,7 +47,7 @@ html body header a.nav:hover {
 }
 html body header h1 {
   color: #221E21;
-  font-size: 1.520875rem;
+  font-size: 1.601613rem;
   text-align: center;
 }
 html body header img.food {
@@ -81,6 +81,9 @@ html body main ul li {
   margin-left: -20vw;
   padding: 5px;
 }
+html body main ul li img.index-img {
+  display: none;
+}
 html body main ul li a {
   margin-left: 25vw;
   color: #ADD9F4;
@@ -89,7 +92,7 @@ html body main ul li a {
   text-decoration-line: underline;
   text-decoration-color: #A28F9D;
   text-decoration-thickness: 2px;
-  font-size: 1.15rem;
+  font-size: 1.17rem;
 }
 html body main ul li a:hover {
   filter: hue-rotate(180deg);
@@ -97,8 +100,12 @@ html body main ul li a:hover {
 }
 @media (min-width: 250px) {
   html body header h1 {
-    font-size: 2.01135719rem;
+    font-size: 1.87388721rem;
     text-align: center;
+  }
+  html body header img.food {
+    width: 75vw;
+    margin-left: 0vw;
   }
   html body main p {
     padding: 5px 15px;
@@ -125,14 +132,76 @@ html body main ul li a:hover {
   }
 }
 @media (min-width: 350px) {
-  body main ul {
+  html body header h1 {
+    font-size: 2.5651642rem;
+  }
+  html body main p {
+    padding: 0px 50px;
+  }
+  html body main ul {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 7fr;
     grid-template-rows: mason;
     flex-direction: unset;
-    background-color: pink;
   }
-  body main ul li {
-    background-color: blue;
+  html body main ul li {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-left: -15vw;
+    width: 100%;
+    padding: 5px 15px;
+  }
+  html body main ul li a {
+    margin-left: 0px;
+    text-align: center;
+  }
+  html body main ol li {
+    padding: 10px 50px;
+  }
+}
+@media (min-width: 400px) {
+  html body header {
+    gap: 5px;
+    padding: 10px 0px;
+  }
+  html body header h1 {
+    font-size: 3.00124212rem;
+  }
+  html body header img.food {
+    width: 250px;
+    border: 10px inset #4C5B5C;
+  }
+  html body main {
+    width: 100%;
+  }
+  html body main ul {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: masonry;
+    gap: 15px;
+    padding: 15px 0px;
+  }
+  html body main ul li {
+    grid-column-start: unset;
+    grid-column-end: unset;
+    width: fit-content;
+    margin-left: unset;
+    margin: 0px auto;
+  }
+  html body main ul li.card {
+    background-color: #A28F9D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  html body main ul li.card img.index-img {
+    display: block;
+    width: 150px;
+  }
+  html body main ul li.card a {
+    background-color: #49393B;
+    padding: 5px 5px;
+    margin: 0px 10px;
   }
 }

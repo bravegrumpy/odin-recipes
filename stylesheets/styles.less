@@ -19,7 +19,7 @@
     }
     .fontSizes() {
             @p: 1rem;
-            @factor: 1.15;
+            @factor: 1.17;
             @h6: (@p * @factor);
             @h5: (@h6 * @factor);
             @h4: (@h5 * @factor);
@@ -127,6 +127,9 @@ html {
                     background-color: @colors[@dark];
                     margin-left: -20vw;
                     padding: 5px;
+                    img.index-img {
+                        display: none;
+                    }
                     a {
                         margin-left: 25vw;
                         #lib.anchor();
@@ -143,8 +146,12 @@ html {
             header {
                 #lib.fontSizes;
                 h1 {
-                    font-size: @h2;
+                    font-size: @h3;
                     text-align: center;
+                }
+                img.food {
+                    width: 75vw;
+                    margin-left: 0vw;
                 }
             }
             main {
@@ -179,22 +186,97 @@ html {
     }
 }
 @media (min-width: 350px) {
-    body {
-        main {
-            ul {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: mason;
-                flex-direction: unset;
-                background-color: pink;
-                li {
-                    background-color: blue;
+    html {
+        body {
+            header {
+                #lib.fontSizes;
+                h1 {
+                    font-size: @h1;
+                }
+            }
+            main {
+                #lib.pallette;
+                p {
+                    padding: 0px 50px;
+                }
+                ul {
+                    display: grid;
+                    grid-template-columns: 1fr 7fr;
+                    grid-template-rows: mason;
+                    flex-direction: unset;
+                    li {
+                        grid-column-start: 2;
+                        grid-column-end: 3;
+                        margin-left: -15vw;
+                        width: 100%;
+                        padding: 5px 15px;
+                        a {
+                            margin-left: 0px;
+                            text-align: center;
+                        }
+                    }
+                }
+                ol {
+                    li {
+                        padding: 10px 50px;
+                    }
                 }
             }
         }
     }
 }
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+    html {
+        #lib.fontSizes;
+        #lib.pallette;
+        body {
+            header {
+                gap: 5px;
+                padding: 10px 0px;
+                h1 {
+                    font-size: (@h1 * @factor);
+                }
+                img.food {
+                    width: 250px;
+                    border: 10px inset @colors[@neutral];
+                }
+            }
+            main {
+                width: 100%;
+                ul {
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: masonry;
+                    gap: 15px;
+                    padding: 15px 0px;
+                    li {
+                        grid-column-start: unset;
+                        grid-column-end: unset;
+                        width: fit-content;
+                        margin-left: unset;
+                        margin: 0px auto;
+                        &.card {
+                            background-color: @colors[@secondary];
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 10px;
+                            img.index-img {
+                                display: block;
+                                width: 150px;
+                            }
+                            a {
+                                background-color: @colors[@dark];
+                                padding: 5px 5px;
+                                margin: 0px 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media (min-width: 450px) {}
 @media (min-width: 500px) {}
 @media (min-width: 800px) {}
