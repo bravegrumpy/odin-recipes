@@ -24,6 +24,15 @@ I am *whizzing* through the course material, becasue I don't really want to spen
         - [ ] Focus on micro-interactions on hover.
             - [ ] Since I'm not using a framework, take advantage of media queries for elements that should not be visible at certain widths
 
+In general, I am aiming to treat this project a bit as the "What do you currently know" litmus test. I will be adhering to some rules as I make this project.  The goal is to stay within the spirit of "learning webdev" while still allowing myself to have the creative freedom to have fun with it. Because this is also aiming to be part of a "porfolio" of sorts, I want it to be somethign I'm proud to put my name on.
+    - Do not do a whole new "tutorial"
+    - Don't use a web framework
+    - You can look up API / syntax considerations
+    - No `npm install`, `gem install` or `pip install`. If I want to use it, it must be through a CDN. 
+        - This inherently limits tailwind usage.
+    - publish using gitub pages
+    - anything you can link to using a cdn and an link in the `<head>` is kosher.
+
 [^1]: Windows Subsystem for Linux, the "Linux" for Windows users. I do have ZorinOS installed, but I did not actually partition enough space for the OS for it to be useful, and I'm not super sure how to "un partition" a hardrive once it is partitioned.
 [^2]: The version control system that "won". 
 [^3]: I made it using sveltekit
