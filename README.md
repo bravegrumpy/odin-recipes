@@ -30,13 +30,14 @@ In general, I am aiming to treat this project a bit as the "What do you currentl
 
 **Rules**
 
-    - Do not do a whole new "tutorial"
-    - Don't use a web framework
-    - You can look up API / syntax considerations
-    - No `npm install`, `gem install` or `pip install`. If I want to use it, it must be through a CDN. 
-        - This inherently limits tailwind usage.
-    - publish using gitub pages
-    - anything you can link to using a cdn and an link in the `<head>` is kosher.
+- Do not do a whole new "tutorial"
+- Don't use a web framework
+- You can look up API / syntax considerations
+- No `npm install`, `gem install` or `pip install`. If I want to use it, it must be through a CDN. 
+    - This inherently limits tailwind usage.
+- publish using gitub pages
+- anything you can link to using a cdn and an link in the `<head>` is kosher.
+- Do Google info, so long as its just for API esque concepts
 
 [^1]: Windows Subsystem for Linux, the "Linux" for Windows users. I do have ZorinOS installed, but I did not actually partition enough space for the OS for it to be useful, and I'm not super sure how to "un partition" a hardrive once it is partitioned.
 [^2]: The version control system that "won". 
