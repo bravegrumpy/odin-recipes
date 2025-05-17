@@ -18,8 +18,9 @@ I am *whizzing* through the course material, becasue I don't really want to spen
     - [x] ordered lists
 - [ ] Have fun with the project
     - [ ] Do as many as possible of the following.
-        - [ ] Use a color scheme, make it using [coolors.co](https://coolors.co)
-        - [ ] Use responsive design principles
+        - [x] Use a color scheme, make it using [coolors.co](https://coolors.co)
+            - I intentionally used a "bad" color scheme, to try and replicate conditions that might be seen if a client were to see this.
+        - [x] Use responsive design principles
         - [ ] Make the index have a card based layout, and take advantage of the new mosaic grid layout
         - [ ] Experiment with scroll-snap, and customizing scrollbars
         - [ ] Use a custom cursor image
