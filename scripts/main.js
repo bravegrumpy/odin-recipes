@@ -4,7 +4,7 @@ class Footer extends HTMLElement {
 
         const footerParent = this.parentNode;
         let foot = document.createElement('footer');
-        foot.innerHTML = `<p>Copyright 2025 Bravegrumpy</p>`;
+        foot.innerHTML = `<p>Copyright &copy; 2025 Bravegrumpy</p>`;
         footerParent.appendChild(foot);
     }
 }

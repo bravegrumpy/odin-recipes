@@ -27,6 +27,9 @@ html body header {
   width: 100%;
   background-color: #63A375;
 }
+html body header .top-logo {
+  display: none;
+}
 html body header a.nav {
   background-color: #49393B;
   font-size: 1.3689rem;
@@ -237,5 +240,48 @@ html body footer {
   html body main ol li::before {
     background-color: unset;
     color: unset;
+  }
+}
+@media (min-width: 500px) {
+  html body header {
+    background: linear-gradient(to bottom, rgba(99, 163, 117, 0.5) 30%, #070808);
+  }
+  html body header.index {
+    flex-direction: row;
+  }
+  html body header .top-logo {
+    display: inline;
+    width: 50px;
+    height: 50px;
+  }
+  html body header h1 {
+    color: #A28F9D;
+    font-weight: bold;
+    font-family: "Courier New";
+    font-size: 2.5651642rem;
+  }
+  html body header img.food {
+    border: 10px outset #0d4262;
+  }
+  html body main p {
+    width: 50vw;
+  }
+  html body main ol {
+    width: 75vw;
+  }
+}
+@media (min-width: 650px) {
+  html body header {
+    padding-bottom: 50px;
+  }
+  html body header .top-logo {
+    width: 60px;
+    height: 60px;
+  }
+  html body header img.food {
+    border-color: #269ae2;
+  }
+  html body main ul {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

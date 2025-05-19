@@ -81,6 +81,9 @@ html {
             width: 100%;
             background-color: @colors[@primary];
             #lib.fontSizes;
+            .top-logo {
+                display: none;
+            }
             a.nav {
                 background-color: @colors[@dark];
                 color: @colors[@emphasis];
@@ -328,10 +331,59 @@ html {
     html {
         #lib.pallette;
         #lib.fontSizes;
-        // body {
-        //     // header {}
-        //     // main {}
-        // }
+        body {
+            header {
+                background: linear-gradient(to bottom, fadeout(@colors[@primary], 50%) 30%, darken(@colors[@neutral], 30%));
+                &.index {
+                    flex-direction: row;
+                }
+                .top-logo {
+                    display: inline;
+                    width: 50px;
+                    height: 50px;
+                }
+                h1 {
+                    color: @colors[@secondary];
+                    font-weight: bold;
+                    font-family: "Courier New";
+                    font-size: @h1;
+                }
+                img.food {
+                    border: 10px outset darken(@colors[@emphasis], 60%);
+                }
+            }
+            main {
+                p {
+                    width: 50vw;
+                }
+                ol {
+                    width: 75vw;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 650px) {
+    html {
+        #lib.pallette;
+        #lib.fontSizes;
+        body {
+            header {
+                .top-logo {
+                    width: 60px;
+                    height: 60px;
+                }
+                img.food {
+                    border-color: darken(@colors[@emphasis], 30%);
+                }
+                padding-bottom: 50px;
+            }
+            main {
+                ul {
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+            }
+        }
     }
 }
 @media (min-width: 800px) {}
