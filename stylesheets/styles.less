@@ -1,20 +1,13 @@
 #lib {
     .pallette() {
         @colors: {
-            // @primary: oklch(0.66 0.0954 152.05);
-            @primary: #63A375;
-            // @secondary: oklch(0.67 0.0301 335.15);
-            @secondary: #A28F9D;
-            // @emphasis: oklch(0.86 0.0594 235.32);
-            @emphasis: #ADD9F4;
-            // @dark: oklch(0.36 0.0229 9.84);
-            @dark: #49393B;
-            // @neutral: oklch(0.46 0.0186 201.48);
-            @neutral: #4C5B5C;
-            // @white: oklch(0.94 0.0258 151.79);
+            @primary: #63a375;
+            @secondary: #a28f9d;
+            @emphasis: #add9f4;
+            @dark: #49393b;
+            @neutral: #4c5b5c;
             @white: #deefe2;
-            // @black: oklch(0.24 0.0093 335.15);
-            @black: #221E21;
+            @black: #221e21;
         }
     }
     .fontSizes() {
@@ -163,6 +156,7 @@ html {
                 #lib.pallette;
                 p {
                     padding: 5px 15px;
+                    max-width: 100%;
                 }
                 ul {
                     li {
@@ -170,6 +164,7 @@ html {
                     }
                 }
                 ol {
+                    max-width: 100%;
                     list-style-type: none;
                     counter-reset: elementcounter;
                     padding-left: 0;
@@ -283,6 +278,13 @@ html {
                                 padding: 5px 5px;
                                 margin: 0px 10px;
                             }
+                            a.imageLink {
+                                background-color: transparent;
+                                &:hover {
+                                    scale: none;
+                                    filter: none;
+                                }
+                            }
                         }
                     }
                 }
@@ -306,11 +308,18 @@ html {
             }
             main {
                 p {
-                    background-color: fadeout(@colors[@emphasis], 80%);
+                    background-color: fadeout(@colors[@emphasis], 50%);
                     padding: 15px 70px;
                     color: darken(@colors[@black], 50%);
+                    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-weight: 500;
+                    font-size: larger;
                     a {
-                        color: darken(@colors[@emphasis], 30%);
+                        color: darken(@colors[@emphasis], 60%);
+                        text-decoration-line: underline;
+                        text-decoration-style: wavy;
+                        text-decoration-thickness: 2px;
+                        text-decoration-skip-ink: none;
                     }
                 }
                 ol {
@@ -334,6 +343,7 @@ html {
         body {
             header {
                 background: linear-gradient(to bottom, fadeout(@colors[@primary], 50%) 30%, darken(@colors[@neutral], 30%));
+                border-block-end: 10px solid @colors[@primary];
                 &.index {
                     flex-direction: row;
                 }
@@ -343,10 +353,13 @@ html {
                     height: 50px;
                 }
                 h1 {
-                    color: @colors[@secondary];
+                    color: @colors[@black];
+                    text-shadow: 2px 2px 5px @colors[@secondary];
+                    // background-color: fadeout(@colors[@secondary], 30%);
                     font-weight: bold;
                     font-family: "Courier New";
                     font-size: @h1;
+                    padding: 0px 15px;
                 }
                 img.food {
                     border: 10px outset darken(@colors[@emphasis], 60%);
@@ -386,4 +399,27 @@ html {
         }
     }
 }
-@media (min-width: 800px) {}
+@media (min-width: 800px) {
+    html {
+        #lib.pallette;
+        #lib.fontSizes;
+        body {
+            border-inline: 20px ridge saturate(@colors[@secondary], -20%);
+            max-width: 900px;
+            margin: 0px auto;
+            
+            main {
+                max-width: 900px;
+                p {
+                    margin: 10px 0px;
+                    width: 35vw;
+                    max-width: 900px;
+                }
+                ul {
+                    max-width: 900px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
