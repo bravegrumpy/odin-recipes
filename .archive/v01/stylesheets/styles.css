@@ -101,9 +101,6 @@ html body main ul li a:hover {
   filter: hue-rotate(180deg);
   scale: 110%;
 }
-html body footer {
-  display: none;
-}
 @media (min-width: 250px) {
   html body header h1 {
     font-size: 1.87388721rem;
