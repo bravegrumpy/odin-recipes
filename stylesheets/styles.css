@@ -224,6 +224,7 @@ html body footer {
   html body main ul li.card a.imageLink:hover {
     scale: none;
     filter: none;
+    cursor: default;
   }
   html body footer {
     width: unset;
