@@ -1,0 +1,208 @@
+* {
+  border-radius: 15px;
+}
+html {
+  background-color: #f3f9f4;
+}
+html body {
+  max-width: 1000px;
+  width: 80vw;
+  margin: 0px auto;
+  background-color: #deefe2;
+}
+html body header {
+  color: #63a375;
+  width: 50%;
+  max-width: 500px;
+  margin: 0px auto;
+  padding: 5px 50px;
+  box-shadow: 5px 5px 15px rgba(73, 57, 59, 0.3);
+}
+html body header h1 {
+  text-align: center;
+  font-family: "Kurale", "Arial", "Tahoma", "Verdana", sans-serif;
+}
+html body header a:has(img) {
+  display: none;
+  width: fit-content;
+  margin: 0px auto;
+  display: block;
+}
+html body header a:has(img) img {
+  display: none;
+  width: 50px;
+}
+html body main ul,
+html body main ol {
+  width: fit-content;
+  margin: 50px auto;
+  border: 1px solid #add9f4;
+  padding: 0px;
+}
+html body main li {
+  list-style: none;
+}
+@media (min-width: 100px) {
+  html {
+    padding: 0px;
+  }
+  html body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  html body header {
+    width: 80vw;
+    padding: 0px;
+    margin: 0px auto;
+  }
+  html body header h1,
+  html body header p {
+    width: fit-content;
+    margin-left: 0px;
+    font-size: 1.31546882rem;
+  }
+  html body header a:has(img) {
+    margin: 0px auto;
+    display: block;
+  }
+  html body header a:has(img) img {
+    display: inline;
+    width: 20px;
+    box-shadow: 5px 5px 15px rgba(73, 57, 59, 0.3);
+  }
+  html body main ul,
+  html body main ol {
+    width: fit-content;
+    margin: 50px auto;
+    border: 1px solid #add9f4;
+    padding: 0px;
+  }
+  html body main li {
+    list-style: none;
+  }
+}
+@media (min-width: 320px) {
+  html body {
+    width: 100%;
+  }
+  html body header {
+    width: 100%;
+    padding: 5px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  html body header h1 {
+    flex: 1;
+    order: 2;
+    width: 100%;
+    text-align: center;
+    font-size: 1.61051rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  html body header a:has(img) {
+    order: 0;
+  }
+  html body header a:has(img) img {
+    width: 100px;
+  }
+  html body main ul,
+  html body main ol {
+    width: 100%;
+    margin: 0px auto;
+    border: 1px solid #add9f4;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: none;
+  }
+  html body main ol li {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    text-align: left;
+  }
+  html body main li {
+    list-style: none;
+    width: 80%;
+    text-align: center;
+    flex: auto;
+    background-color: #c5b9c2;
+    padding: 5px 20px;
+    box-shadow: 5px 5px 20px rgba(73, 57, 59, 0.4);
+  }
+  html body main li:has(a):hover {
+    filter: hue-rotate(180deg);
+  }
+  html body main li a {
+    display: inline-block;
+    color: #49393b;
+    text-decoration-line: overline underline;
+    text-decoration-thickness: 2px;
+    width: 100%;
+    padding: 10px 0px;
+  }
+}
+@media (min-width: 480px) {
+  html body {
+    width: 100%;
+    margin: 0px auto;
+  }
+  html body header,
+  html body footer {
+    width: 100%;
+    padding: 5px 0px;
+    margin: 0px auto;
+  }
+  html body header h1,
+  html body footer h1 {
+    font-size: 2.19244804rem;
+  }
+  html body header a:has(img) img,
+  html body footer a:has(img) img {
+    width: 150px;
+  }
+}
+@media (min-width: 768px) {
+  html body {
+    width: 80vw;
+    margin: 0px auto;
+  }
+  html body header,
+  html body footer {
+    width: 80%;
+    padding: 5px 0px;
+  }
+  html body header h1,
+  html body footer h1 {
+    font-size: 2.19244804rem;
+  }
+  html body main ul,
+  html body main ol {
+    width: 75%;
+    margin: 50px auto;
+    border: 1px solid #add9f4;
+    padding: 0px;
+    border: none;
+  }
+  html body main li {
+    list-style: none;
+  }
+}
+@media (min-width: 1024px) {
+  html body header h1,
+  html body footer h1 {
+    font-size: 2.28775776rem;
+  }
+  html body main ul,
+  html body main ol {
+    width: fit-content;
+    margin: 50px auto;
+    border: 1px solid #add9f4;
+    padding: 0px;
+  }
+  html body main li {
+    list-style: none;
+  }
+}
